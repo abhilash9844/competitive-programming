@@ -76,19 +76,30 @@ const int dx[] = {0, 0, 1, -1, 1, 1, -1, -1};
 const int dy[] = {1, -1, 0, 0, 1, -1, 1, -1};
 
 void solve() {
-    // Your solution here
-    
+    int n;
+    cin >> n;
+
+    int ans = 0;
+
+    while (n--) {
+        int a, b, c;
+        cin >> a >> b >> c;
+
+        if (a + b + c >= 2)
+            ans++;
+    }
+
+    cout << ans << '\n';
 }
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
+   // Comment out for single test case
     
-    int t = 1;
-    cin >> t;  // Comment out for single test case
     
-    while (t--) {
-        solve();
-    }
+    solve();
     
-    return 0;}
+    
+    return 0;
+}

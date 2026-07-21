@@ -76,19 +76,29 @@ const int dx[] = {0, 0, 1, -1, 1, 1, -1, -1};
 const int dy[] = {1, -1, 0, 0, 1, -1, 1, -1};
 
 void solve() {
-    // Your solution here
-    
+    int n;
+    cin >> n;
+    int x = 0;
+
+    while (n--) {
+        string s;
+        cin >> s;
+        if (s.find('+') != string::npos)
+            x++;
+        else
+            x--;
+    }
+    cout << x << '\n';
 }
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     
-    int t = 1;
-    cin >> t;  // Comment out for single test case
+    // Comment out for single test case
     
-    while (t--) {
-        solve();
-    }
+   
+    solve();
+    
     
     return 0;}

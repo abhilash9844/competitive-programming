@@ -76,7 +76,15 @@ const int dx[] = {0, 0, 1, -1, 1, 1, -1, -1};
 const int dy[] = {1, -1, 0, 0, 1, -1, 1, -1};
 
 void solve() {
-    // Your solution here
+
+    string s;
+    cin >> s;
+
+    if(s.length() <= 10)
+        cout << s << '\n';
+    else
+        cout << s[0] << s.length() - 2 << s[s.length() - 1] << '\n';
+
     
 }
 
@@ -91,4 +99,5 @@ int main() {
         solve();
     }
     
-    return 0;}
+    return 0;
+}

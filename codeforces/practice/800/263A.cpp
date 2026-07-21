@@ -76,19 +76,29 @@ const int dx[] = {0, 0, 1, -1, 1, 1, -1, -1};
 const int dy[] = {1, -1, 0, 0, 1, -1, 1, -1};
 
 void solve() {
-    // Your solution here
-    
+    int row, col;
+
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 1; j <= 5; j++) {
+            int x;
+            cin >> x;
+
+        if (x == 1) {
+                row = i;
+                col = j;
+            }
+        }
+    }
+
+    cout << abs(row - 3) + abs(col - 3) << '\n';
 }
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     
-    int t = 1;
-    cin >> t;  // Comment out for single test case
     
-    while (t--) {
         solve();
-    }
+    
     
     return 0;}
